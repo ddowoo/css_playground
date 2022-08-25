@@ -8,14 +8,17 @@
     -  구현방법
         백그라운드 크기를 2배로 늘리고 백그라운드를 이동시킨다
         생각보다 많이 부자연스러웠다 (실패)
+        
  ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/63283076/186578085-ce1f7bf8-bd46-4124-9b6f-7854f658f03f.gif)
+
 - ver2
     영상
     -   구현 방법
         글자 위에 동일 한 글자를 올려서 opacity를 조정한다 
         아마 vercel에서 이런식으로 구현한듯 하다
         (개발자 도구 element를 보면 span태그 두개를 겹쳐 두었다)
-    ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/63283076/186578421-806021b5-1fe3-481e-98b5-41fad1e0de13.gif)
+
+   ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/63283076/186578421-806021b5-1fe3-481e-98b5-41fad1e0de13.gif)
     
     
     ##### 학습 #####
