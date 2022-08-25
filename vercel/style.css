@@ -16,6 +16,7 @@ h1 {
 }
 
 #screen .title {
+  color: #fff;
   margin: 0;
   text-align: center;
   font-size: 150px;
@@ -27,58 +28,72 @@ h1 {
   position: relative;
   background-clip: text;
   background-color: #fff;
-  background-size: 250%;
+  transition: 300ms ease-in-out;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.first {
-  background-image: linear-gradient(to right, #fff, #fff, #007cf0, #00dfd8);
-  animation: firstAnimation 9s infinite ease-in-out;
+#screen .title p span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.second {
-  background-image: linear-gradient(to right, #fff, #fff, #7928ca, #ff0080);
-  animation: secondAnimation 9s infinite ease-in-out;
+span.first::before {
+  content: "I'm";
+  background-image: linear-gradient(to right, #007cf0, #00dfd8);
+  animation: firstAnimation infinite 9000ms ease-in-out;
 }
 
-.third {
-  background-image: linear-gradient(to right, #fff, #fff, #ff4d4d, #f9cb28);
-  animation: thirdAnimation 9s infinite ease-in-out;
+span.second::before {
+  content: "front-end";
+  background-image: linear-gradient(to right, #7928ca, #ff0080);
+  animation: secondAnimation infinite 9000ms ease-in-out;
+}
+
+span.third::before {
+  content: "developer";
+  background: linear-gradient(to right, #ff4d4d, #f9cb28);
+  animation: thirdAnimation infinite 9000ms ease-in-out;
 }
 
 @keyframes firstAnimation {
   0% {
-    background-position: 0 50%;
+    opacity: 0;
   }
   17.5% {
-    background-position: 100% 50%;
+    opacity: 1;
   }
   35% {
-    background-position: 0 50%;
+    opacity: 0;
   }
 }
 
 @keyframes secondAnimation {
   33% {
-    background-position: 0 50%;
+    opacity: 0;
   }
   50.5% {
-    background-position: 100% 50%;
+    opacity: 1;
   }
   70% {
-    background-position: 0 50%;
+    opacity: 0;
   }
 }
 
 @keyframes thirdAnimation {
   68% {
-    background-position: 0 50%;
+    opacity: 0;
   }
   85.5% {
-    background-position: 100% 50%;
+    opacity: 1;
   }
   105% {
-    background-position: 0 50%;
+    opacity: 0;
   }
 }
